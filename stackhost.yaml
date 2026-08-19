@@ -7,7 +7,7 @@ commands:
     - "pip install -r requirements.txt"
   start: "python -u app.py"
 
-port: 3000
+port: 8080
 
 repository:
   branch: main
