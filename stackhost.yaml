@@ -1,7 +1,8 @@
 runtime:
-  image: python:3.10
+  image: python:3.11
 
 commands:
+  package: ""
   build:
     - "pip install -r requirements.txt"
   start: "python app.py"
