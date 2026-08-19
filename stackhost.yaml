@@ -7,6 +7,8 @@ commands:
     - "pip install -r requirements.txt"
   start: "python app.py"
 
+port: 3000
+
 repository:
   branch: main
   auto_deploy: true
