@@ -1,5 +1,11 @@
-name: stack-node
-runtime: python
-build:
-  install: pip install -r requirements.txt
-start: python main.py
+runtime:
+  image: python:3.10
+
+commands:
+  build:
+    - "pip install -r requirements.txt"
+  start: "python app.py"
+
+repository:
+  branch: main
+  auto_deploy: true
