@@ -1,12 +1,5 @@
-runtime:
-  image: python:3.11
-
-commands:
-  package: ""
-  build:
-    - "pip install -r requirements.txt"
-  start: "python app.py"
-
-repository:
-  branch: main
-  auto_deploy: true
+name: stack-node
+runtime: python
+build: pip install -r requirements.txt
+start: python app.py
+port: 3000
